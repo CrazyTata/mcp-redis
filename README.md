@@ -1,6 +1,6 @@
-# Redis MCP (Management Control Panel)
+# Redis MCP (Model Context Protocol)
 
-Redis MCP 是一个基于 go-zero 框架开发的 Redis 管理控制面板，支持多种交互方式，SSE（Server-Sent Events）和命令行界面。
+Redis MCP 是一个基于 go-zero 框架开发的 Redis 模型上下文协议实现，支持多种交互方式，包括 SSE（Server-Sent Events）和命令行界面。它提供了一个统一的接口来管理和操作 Redis 数据，使开发者能够更方便地集成 Redis 功能到他们的应用中。
 
 ## 功能特点
 
@@ -16,6 +16,7 @@ Redis MCP 是一个基于 go-zero 框架开发的 Redis 管理控制面板，支
 - 统一的错误处理和响应格式
 - 基于 go-zero 框架，提供高性能和可扩展性
 - 支持 Cursor IDE 集成
+- 符合 Model Context Protocol 规范
 
 ## 快速开始
 
@@ -65,14 +66,14 @@ Redis:
   "mcpServers": {
     "redis": {
       "name": "Redis MCP",
-      "description": "Redis Management Control Panel",
+      "description": "Redis Model Context Protocol",
       "version": "1.0.0",
       "url": "http://localhost:8083/sse",
       "transport": "sse"
     },
     "redis-cli": {
       "name": "Redis MCP CLI",
-      "description": "Redis Management Control Panel CLI",
+      "description": "Redis Model Context Protocol CLI",
       "version": "1.0.0",
       "command": "go run main.go -m stdio",
       "transport": "stdio",
