@@ -2,10 +2,10 @@ package config
 
 import (
 	"github.com/zeromicro/go-zero/core/stores/redis"
-	"github.com/zeromicro/go-zero/rest"
+	"github.com/zeromicro/go-zero/mcp"
 )
 
 type Config struct {
-	rest.RestConf
-	Redis redis.RedisConf
+	Redis   redis.RedisConf
+	McpConf mcp.McpConf
 }

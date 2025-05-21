@@ -2,10 +2,7 @@ module mcp-redis
 
 go 1.23.4
 
-require (
-	github.com/redis/go-redis/v9 v9.8.0
-	github.com/zeromicro/go-zero v1.8.3
-)
+require github.com/zeromicro/go-zero v1.8.3
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -28,6 +25,7 @@ require (
 	github.com/prometheus/client_model v0.6.1 // indirect
 	github.com/prometheus/common v0.62.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
+	github.com/redis/go-redis/v9 v9.8.0 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	go.opentelemetry.io/otel v1.24.0 // indirect
 	go.opentelemetry.io/otel/exporters/jaeger v1.17.0 // indirect
